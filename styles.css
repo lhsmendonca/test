@@ -1,0 +1,119 @@
+.main_search .forms .buttons_div, .main_search .forms .text_input, .main_search .forms, .main_search, .links_div {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*
+All pages
+*/
+body {
+  margin: 0px;
+}
+body div.viewport {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-height: 100%;
+  min-width: 400px;
+}
+
+.links_div {
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 47px;
+  font-size: 13px;
+}
+.links_div a {
+  padding: 20px;
+  color: rgba(0, 0, 0, 0.87);
+  text-decoration: none;
+}
+.links_div a:hover {
+  color: rgba(0, 0, 0, 0.87);
+  text-decoration: underline;
+}
+
+div {
+  font-family: arial, sans-serif;
+}
+
+/*
+Google search and image search pages
+*/
+.main_search .logo {
+  margin-bottom: 25px;
+  margin: 0px 30px;
+}
+.main_search .logo img {
+  padding-top: 109px;
+}
+.main_search .forms {
+  width: 100%;
+}
+.main_search .forms form {
+  width: 100%;
+}
+.main_search .forms .text_input {
+  padding: 0px 30px;
+}
+.main_search .forms .text_input .searchbar {
+  flex-grow: 2;
+  padding: 10px 10px;
+  margin: 20px;
+  height: 25px;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 468px;
+  min-width: 336px;
+  border: 1px solid lightgray;
+  background-image: url("search_icon.png");
+  background-position: 10px;
+  background-repeat: no-repeat;
+  text-indent: 30px;
+}
+.main_search .forms .text_input .searchbar:focus {
+  outline: none;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+}
+.main_search .forms .text_input .searchbar:hover {
+  outline: none;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+}
+.main_search .forms .buttons_div {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.main_search .forms .buttons_div button {
+  box-sizing: border-box;
+  background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  color: #5F6368;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  appearance: push-button;
+}
+.main_search .forms .buttons_div button:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+  background-color: #f8f8f8;
+  border: 1px solid #c6c6c6;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+/*# sourceMappingURL=styles.css.map */

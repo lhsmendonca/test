@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" 
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+            crossorigin="anonymous">
+    </head>
+    <body>
+        <div id="top">
+            <div class="links_div">
+                <a href="index.html" class="links">Google Search</a>
+            </div>           
+        </div>            
+        <div class="title">
+            <h1 class="title">
+                Advanced Search
+            </h1>                
+        </div>
+        <div class="container" id="main">
+            <div class="row no-gutters">
+                <div class="col-lg-3 col-sm-4 labels" id="label_header">
+                    Find pages with...
+                </div>
+                <div class="col-lg-6 col-sm-4 labels">
+                </div>
+                <div class="col-lg-3 col-sm-2 labels" id="example_header">
+                    To do this in the search box.
+                </div>
+            </div>
+            <form action="https://google.com/search">
+                <div class="row no-gutters">
+                    <div class="col-lg-3 col-sm-2 labels">
+                        <label for="all_words">all these words:</label>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 labels">    
+                        <input class="adv_text_input" value="" autofocus="autofocus" id="all_words" name="as_q" type="text">
+                    </div>
+                    <div class="col-lg-3 col-sm-2 examples">
+                        Type the important words:
+                        <span class="example">tri-colour rat terrier</span>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-2 labels">
+                        <label for="exact_words">this exact word or phrase:</label>
+                    </div>
+                    <div class="col-6 input">    
+                        <input class="adv_text_input" value="" id="exact_words" name="as_epq" type="text">
+                    </div>
+                    <div class="col-4 examples">
+                        Put exact words in quotes:
+                        <span class="example">"rat terrier"</span>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-2 labels">
+                        <label for="any_words">any of these words:</label>
+                    </div>
+                    <div class="col-6 input">    
+                        <input class="adv_text_input" value="" id="any_words" name="as_oq" type="text">
+                    </div>
+                    <div class="col-4 examples">
+                        Type
+                        <span class="example">OR</span>
+                        beetween all the words you want:
+                        <br><span class="example">miniature OR standard</span>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-2 labels">
+                        <label for="none_words">none of these words:</label>
+                    </div>
+                    <div class="col-6 input">    
+                        <input class="adv_text_input" value="" id="none_words" name="as_eq" type="text">
+                    </div>
+                    <div class="col-4 examples">
+                        Put a minus sign just before words that you don't want:
+                        <span class="example">-rodent, -"Jack Russell"</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">                        
+                    </div>
+                    <div class="col-5" id="adv_button_div">    
+                        <input class="adv_button" value="Advanced Search" type="submit">
+                    </div>
+                    <div class="col-4">                        
+                    </div>
+                    
+                </div>
+                            
+            </form>             
+        </div> 
+    </body>
+</html>
